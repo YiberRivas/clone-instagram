@@ -1,0 +1,156 @@
+body {
+    background-color: #ffffff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú superior */
+.menu-superior {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #444;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 150px; /* AUMENTADO el tamaño */
+    height: auto;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.boton-volver {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ff4d4d;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: -70px; /* 🔄 Mueve el botón a la izquierda */
+}
+
+.boton-volver:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Publicación */
+.publicacion {
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 20px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background: #1a1a1a;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.cabecera-publicacion {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info-usuario p, .info-usuario span {
+    margin: 0;
+    color: white;
+}
+
+.imagen-publicacion {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Imagen más grande en laptops, más pequeña en móviles */
+@media screen and (min-width: 768px) {
+    .imagen-publicacion {
+        height: auto;
+        max-height: 600px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .imagen-publicacion {
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+.acciones-publicacion {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.acciones-publicacion button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s;
+}
+
+.acciones-publicacion button:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.info-publicacion {
+    padding: 10px;
+}
+
+.cantidad-likes {
+    font-weight: bold;
+}
+
+.lista-detalles {
+    padding: 5px 0;
+    list-style: none;
+}
+
+.lista-detalles li {
+    font-size: 14px;
+    padding: 2px 0;
+}
+
+.descripcion {
+    margin: 10px 0;
+}
+
+.hashtags {
+    color: #66b2ff;
+    font-weight: bold;
+}

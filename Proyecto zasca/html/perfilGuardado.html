@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Clone - Perfil (Guardado)</title>
+  <link rel="stylesheet" href="../css/perfilGuardado.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="icon" href="../img/favico1.jpeg">
+</head>
+<body>
+  <!-- Barra lateral -->
+  <aside class="barra-lateral">
+    <div class="contenedor-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1024px-Instagram_logo.svg.png" alt="Instagram Logo" class="logo"/>
+    </div>
+    <nav class="menu-navegacion">
+      <a href="../html/index.html"><i class="fas fa-home"></i> Inicio</a>
+      <a href="#"><i class="fas fa-search"></i> Buscar</a>
+      <a href="#"><i class="fas fa-compass"></i> Explorar</a>
+      <a href="Reels.html"><i class="fas fa-video"></i> Reels</a>
+      <a href="#"><i class="fas fa-comment-dots"></i> Mensajes</a>
+      <a href="#"><i class="fas fa-bell"></i> Notificaciones</a>
+      <a href="#"><i class="fas fa-plus-square"></i> Crear</a>
+      <a href="#" class="active"><i class="fas fa-user"></i> Perfil</a>
+      <a href="../html/perfil.html"><i class="fas fa-bars"></i> Más</a>
+    </nav>
+   
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <section class="pagina-perfil">
+      <!-- Encabezado del perfil -->
+      <div class="encabezado-perfil">
+        <div class="contenedor-foto-perfil">
+          <img class="foto-perfil-grande" src="../img/perfil1.jpg" alt="Foto de perfil" />
+        </div>
+        <div class="info-perfil">
+          <div class="nombre-usuario">
+            <h2>angesalcedo21</h2>
+            <button class="boton-editar-perfil">Editar perfil</button>
+          </div>
+          <ul class="estadisticas-perfil">
+            <li><strong>5</strong> publicación</li>
+            <li><strong>4.7M</strong> seguidores</li>
+            <li><strong>251</strong> seguidos</li>
+          </ul>
+          <div class="descripcion-perfil">
+            <p class="nombre-real">Angela Salcedo</p>
+            <p class="bio-perfil">•Take it easy• ⚡</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Historias Destacadas -->
+      <div class="destacados-perfil">
+        <div class="item-destacado">
+          <img src="../img/perfil1.jpg" alt="Destacada"/>
+          <p>Nueva</p>
+        </div>
+        <div class="item-destacado">
+          <img src="../img/perfil4.jpg" alt="Destacada"/>
+          <p>Propio❤️</p>
+        </div>
+        <div class="item-destacado">
+          <img src="../img/perfil1.jpg" alt="Destacada"/>
+          <p>❤️😎</p>
+        </div>
+        <div class="item-destacado">
+          <img src="../img/perfil3.jpg" alt="Destacada"/>
+          <p>Destacada</p>
+        </div>
+      </div>
+
+      <!-- Menú de perfil -->
+      <div class="menu-perfil">
+        <a href="../html/perfil.html"><i class="fa-solid fa-table-cells"></i> Publicaciones</a>
+        <a href="../html/perfilGuardado.html" class="active"><i class="fa-regular fa-bookmark"></i> Guardado</a>
+        <a href="#"><i class="fa-solid fa-user-tag"></i> Etiquetas</a>
+      </div>
+
+      <!-- Sección: Guardados -->
+      <div class="guardados-perfil active">
+        <div class="item-guardado">
+          <img src="../img/Guardados/guardados3.jpg" alt="Guardado 1" />
+        </div>
+        <div class="item-guardado">
+          <img src="../img/Guardados/guardados2.jpg" alt="Guardado 2" />
+        </div>
+        <div class="item-guardado">
+          <img src="../img/Guardados/guardados4.jpg" alt="Guardado 3" />
+        </div>
+        <div class="item-guardado">
+          <img src="../img/Guardados/guardados5.jpg" alt="Guardado 4" />
+        </div>
+        <!-- Agrega más items guardados según requieras -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
